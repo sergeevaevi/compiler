@@ -23,9 +23,9 @@ set(ANTLR_EXECUTABLE /home/llen/antlr-4.8-complete.jar)
 find_package(ANTLR REQUIRED)
 
 # Call macro to add lexer and grammar to your build dependencies.
-antlr_target(SampleGrammarLexer TLexer.g4 LEXER
+antlr_target(SampleGrammarLexer JavaScriptLexer.g4 LEXER
              PACKAGE antlrcpptest)
-antlr_target(SampleGrammarParser TParser.g4 PARSER
+antlr_target(SampleGrammarParser JavaScriptParser.g4 PARSER
              PACKAGE antlrcpptest
              DEPENDS_ANTLR SampleGrammarLexer
              COMPILE_FLAGS -lib ${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
@@ -36,6 +36,18 @@ include_directories(${ANTLR_SampleGrammarParser_OUTPUT_DIR})
 
 # add generated grammar to demo binary target
 add_executable(demo main.cpp
-               ${ANTLR_SampleGrammarLexer_CXX_OUTPUTS}
-               ${ANTLR_SampleGrammarParser_CXX_OUTPUTS})
+        cmake-build-debug/antlr4cpp_generated_src/JavaScriptLexer/JavaScriptLexer.h
+        cmake-build-debug/antlr4cpp_generated_src/JavaScriptLexer/JavaScriptLexer.cpp
+        cmake-build-debug/antlr4cpp_generated_src/JavaScriptLexer/JavaScriptLexerBase.h
+        cmake-build-debug/antlr4cpp_generated_src/JavaScriptLexer/JavaScriptLexerBase.cpp
+        cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParserBase.cpp
+        cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParserBase.h
+        cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParser.cpp
+        cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParser.h
+
+
+        ${ANTLR_SampleGrammarLexer_CXX_OUTPUTS}
+               ${ANTLR_SampleGrammarParser_CXX_OUTPUTS}
+        )
+
 target_link_libraries(demo antlr4_static)
