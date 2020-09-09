@@ -1,3 +1,4 @@
+project(demo)
 # minimum required CMAKE version
 CMAKE_MINIMUM_REQUIRED(VERSION 3.7 FATAL_ERROR)
 
@@ -21,6 +22,7 @@ include_directories(${ANTLR4_INCLUDE_DIRS})
 set(ANTLR_EXECUTABLE /home/llen/antlr-4.8-complete.jar)
 # add macros to generate ANTLR Cpp code from grammar
 find_package(ANTLR REQUIRED)
+find_package(GTest REQUIRED)
 
 # Call macro to add lexer and grammar to your build dependencies.
 antlr_target(SampleGrammarLexer JavaScriptLexer.g4 LEXER
@@ -33,7 +35,7 @@ antlr_target(SampleGrammarParser JavaScriptParser.g4 PARSER
 # include generated files in project environment
 include_directories(${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
 include_directories(${ANTLR_SampleGrammarParser_OUTPUT_DIR})
-
+include_directories(${GTEST_INCLUDE_DIRS})
 # add generated grammar to demo binary target
 add_executable(demo main.cpp
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptLexer/JavaScriptLexer.h
@@ -44,10 +46,18 @@ add_executable(demo main.cpp
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParserBase.h
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParser.cpp
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParser.h
-
-
+        MyVisitor.cpp
+        MyVisitor.h
+        gen/JavaScriptParser.h
+        gen/JavaScriptParser.cpp
+        gen/JavaScriptLexer.h
+        gen/JavaScriptLexer.cpp
+        gen/JavaScriptParserBaseVisitor.cpp
+        gen/JavaScriptParserBaseVisitor.h
+     #   tests/tests.cpp
         ${ANTLR_SampleGrammarLexer_CXX_OUTPUTS}
                ${ANTLR_SampleGrammarParser_CXX_OUTPUTS}
         )
 
 target_link_libraries(demo antlr4_static)
+target_link_libraries(demo ${GTEST_LIBRARIES} pthread)
