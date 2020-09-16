@@ -1,0 +1,11 @@
+WhileStatement while(
+    Literal true
+    BlockStatement {
+        IfStatement if(
+            Identifier x
+            BreakStatement break
+            ExpressionStatement
+                Identifier y
+        )
+    }
+)

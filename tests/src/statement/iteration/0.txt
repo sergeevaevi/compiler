@@ -1,0 +1,7 @@
+WhileStatement while(
+    Literal true
+    ExpressionStatement
+        Identifier doSomething
+        Arguments (
+        )
+)

@@ -1,0 +1,17 @@
+IfStatement if(
+    EqualityExpression ==
+        Identifier i
+        Literal null
+    BlockStatement {
+        ExpressionStatement
+            Identifier f
+            Arguments (
+            )
+    }
+    BlockStatement {
+        ExpressionStatement
+            Identifier g
+            Arguments (
+            )
+    }
+)

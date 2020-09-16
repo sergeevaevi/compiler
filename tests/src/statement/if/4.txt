@@ -1,0 +1,38 @@
+IfStatement if(
+    EqualityExpression >
+        AdditiveExpression +
+            Identifier i
+            Literal 
+                NumericLiteral 10
+        MultiplicativeExpression *
+            Identifier j
+            Literal 
+                NumericLiteral 11
+    BlockStatement {
+        ExpressionStatement
+            AssignmentExpression =
+                Identifier i
+                Literal 
+                    NumericLiteral 1
+    }
+    IfStatement if(
+        EqualityExpression <
+            Identifier j
+            Literal 
+                NumericLiteral 10
+        BlockStatement {
+            ExpressionStatement
+                AssignmentExpression =
+                    Identifier i
+                    Literal 
+                        NumericLiteral 2
+        }
+        BlockStatement {
+            ExpressionStatement
+                AssignmentExpression =
+                    Identifier i
+                    Literal 
+                        NumericLiteral 3
+        }
+    )
+)

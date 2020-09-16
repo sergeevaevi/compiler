@@ -1,0 +1,11 @@
+IfStatement if(
+    Literal 
+        NumericLiteral 1
+    BlockStatement {
+        ExpressionStatement
+            AssignmentExpression =
+                Identifier i
+                Literal 
+                    NumericLiteral 10
+    }
+)

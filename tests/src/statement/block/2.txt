@@ -1,0 +1,10 @@
+BlockStatement {
+    ExpressionStatement
+        Identifier doThis
+        Arguments (
+        )
+    ExpressionStatement
+        Identifier doThat
+        Arguments (
+        )
+}

@@ -1,0 +1,6 @@
+IfStatement if(
+    Literal 
+        NumericLiteral 1
+    BlockStatement {
+    }
+)

@@ -1,0 +1,14 @@
+WhileStatement while(
+    Literal 
+        NumericLiteral 1
+    BlockStatement {
+        IfStatement if(
+            Literal 
+                NumericLiteral 1
+            BlockStatement {
+                BreakStatement break
+            }
+        )
+        BreakStatement break
+    }
+)

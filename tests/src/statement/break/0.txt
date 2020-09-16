@@ -1,0 +1,7 @@
+WhileStatement while(
+    Literal 
+        NumericLiteral 1
+    BlockStatement {
+        BreakStatement break
+    }
+)

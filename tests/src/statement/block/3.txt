@@ -1,0 +1,17 @@
+BlockStatement {
+    ExpressionStatement
+        Literal 
+            NumericLiteral 1
+    BlockStatement {
+        BlockStatement {
+            ExpressionStatement
+                Literal 
+                    NumericLiteral 3
+        }
+    }
+    BlockStatement {
+        ExpressionStatement
+            Literal 
+                NumericLiteral 2
+    }
+}

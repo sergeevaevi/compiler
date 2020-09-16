@@ -1,0 +1,4 @@
+BlockStatement {
+    ExpressionStatement
+        Identifier foo
+}
