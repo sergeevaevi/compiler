@@ -1,0 +1,15 @@
+ExpressionStatement
+    Literal 
+        NumericLiteral 0
+ExpressionStatement
+    Literal 
+        NumericLiteral 42
+ExpressionStatement
+    Literal 
+        NumericLiteral 3.1415
+ExpressionStatement
+    Literal 
+        NumericLiteral .14
+ExpressionStatement
+    Literal 
+        NumericLiteral 6.02214179e+23

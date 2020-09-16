@@ -1,0 +1,14 @@
+ExpressionStatement
+    AssignmentExpression =
+        Identifier x
+        ObjectLiteral
+            PropertyExpressionAssignment
+                PropertyName
+                    Identifier x
+                Literal 
+                    NumericLiteral 1
+            PropertyExpressionAssignment
+                PropertyName
+                    Identifier x
+                Literal 
+                    NumericLiteral 2

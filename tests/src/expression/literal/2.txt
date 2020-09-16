@@ -1,0 +1,10 @@
+ExpressionStatement
+    Literal "Hello"
+ExpressionStatement
+    Literal "\n\r\t\v\b\f\\\'\"\0"
+ExpressionStatement
+    Literal "\x61"
+ExpressionStatement
+    Literal "Hello\n world"
+ExpressionStatement
+    Literal "Hello\02 World"

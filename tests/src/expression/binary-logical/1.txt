@@ -1,0 +1,8 @@
+ExpressionStatement
+    BitLogicalAndExpression: &&
+        Identifier x
+        Identifier y
+ExpressionStatement
+    BitLogicalOrExpression: ||
+        Identifier x
+        Identifier y

@@ -1,0 +1,9 @@
+ExpressionStatement
+    AssignmentExpression =
+        Identifier x
+        ObjectLiteral
+            PropertyExpressionAssignment
+                PropertyName
+                    Identifier answer
+                Literal 
+                    NumericLiteral 42
