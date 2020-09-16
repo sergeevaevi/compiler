@@ -1,0 +1,5 @@
+ExpressionStatement
+    MultiplicativeExpression /
+        ElementList
+            Identifier a
+        Identifier b

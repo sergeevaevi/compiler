@@ -1,0 +1,5 @@
+ExpressionStatement
+    MultiplicativeExpression /
+        ThisExpression this
+        Literal 
+            NumericLiteral 100

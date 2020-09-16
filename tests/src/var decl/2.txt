@@ -1,0 +1,6 @@
+VariableDeclarationList
+    var
+    Identifier i
+    Literal 
+        NumericLiteral 1
+    Identifier j

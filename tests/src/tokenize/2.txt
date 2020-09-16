@@ -1,0 +1,7 @@
+IfStatement if(
+    Literal false
+    BlockStatement {
+        ExpressionStatement
+            Literal /42/
+    }
+)

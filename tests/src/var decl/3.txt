@@ -1,0 +1,14 @@
+VariableDeclarationList
+    var
+    Identifier i
+    Literal 
+        NumericLiteral 1
+    Identifier j
+    Literal 
+        NumericLiteral 55
+VariableDeclarationList
+    var
+    Identifier i
+    AdditiveExpression +
+        Identifier j
+        Identifier i

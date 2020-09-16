@@ -1,0 +1,7 @@
+FunctionDecl function
+    Identifier f
+    FormalParameterArg 
+        Identifier s
+    FunctionBody
+ExpressionStatement
+    Literal /42/
