@@ -1,0 +1,7 @@
+FunctionDecl function
+    Identifier test
+    FormalParameterArg 
+        Identifier t
+    FormalParameterArg 
+        Identifier t
+    FunctionBody

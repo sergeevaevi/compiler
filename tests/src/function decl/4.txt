@@ -1,0 +1,30 @@
+FunctionDecl function
+    Identifier f
+    FormalParameterArg =
+        Identifier a
+        Literal "a"
+    FormalParameterArg =
+        Identifier b
+        Literal 
+            NumericLiteral 1
+    FunctionBody
+        IfStatement if(
+            EqualityExpression ==
+                Identifier a
+                Literal "a"
+            BlockStatement {
+                Statement return
+                    Literal true
+            }
+            BlockStatement {
+                VariableDeclarationList
+                    var
+                    Identifier i
+                    Literal false
+                Statement return
+                    Identifier i
+            }
+        )
+        FunctionDecl function
+            Identifier g
+            FunctionBody

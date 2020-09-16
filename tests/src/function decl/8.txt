@@ -1,0 +1,10 @@
+FunctionDecl function
+    Identifier test
+    FormalParameterArg 
+        Identifier __proto__
+    FunctionBody
+        ExpressionStatement
+            AdditiveExpression +
+                Literal "use strict"
+                Literal 
+                    NumericLiteral 42

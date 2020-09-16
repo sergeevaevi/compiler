@@ -1,0 +1,8 @@
+FunctionDecl function
+    Identifier eval
+    FunctionBody
+        FunctionDecl function
+            Identifier inner
+            FunctionBody
+                ExpressionStatement
+                    Literal "use strict"

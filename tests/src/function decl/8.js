@@ -1,0 +1,1 @@
+function test(__proto__) { "use strict" + 42; }

@@ -1,0 +1,13 @@
+FunctionDecl function
+    Identifier f
+    FormalParameterArg =
+        Identifier a
+        Literal 
+            NumericLiteral 1
+    FormalParameterArg 
+        Identifier b
+    FunctionBody
+        Statement return
+            AdditiveExpression +
+                Identifier a
+                Identifier b
