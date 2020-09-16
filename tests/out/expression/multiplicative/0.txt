@@ -1,0 +1,12 @@
+ExpressionStatement
+    MultiplicativeExpression *
+        Identifier x
+        Identifier y
+ExpressionStatement
+    MultiplicativeExpression /
+        Identifier x
+        Identifier y
+ExpressionStatement
+    MultiplicativeExpression %
+        Identifier x
+        Identifier y

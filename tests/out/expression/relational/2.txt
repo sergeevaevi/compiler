@@ -1,0 +1,25 @@
+IfStatement if(
+    BitLogicalAndExpression: &&
+        EqualityExpression ==
+            MultiplicativeExpression *
+                Identifier a
+                Literal 
+                    NumericLiteral 3
+            AdditiveExpression +
+                Literal 
+                    NumericLiteral 1
+                Literal 
+                    NumericLiteral 3
+        Literal 
+            NumericLiteral 1
+    BlockStatement {
+    }
+    IfStatement if(
+        EqualityExpression >=
+            Identifier a
+            Literal 
+                NumericLiteral 1
+        BlockStatement {
+        }
+    )
+)

@@ -1,0 +1,24 @@
+ExpressionStatement
+    AdditiveExpression +
+        AdditiveExpression +
+            Identifier x
+            Identifier y
+        Identifier z
+ExpressionStatement
+    AdditiveExpression +
+        AdditiveExpression -
+            Identifier x
+            Identifier y
+        Identifier z
+ExpressionStatement
+    AdditiveExpression +
+        Identifier x
+        MultiplicativeExpression *
+            Identifier y
+            Identifier z
+ExpressionStatement
+    AdditiveExpression +
+        Identifier x
+        MultiplicativeExpression /
+            Identifier y
+            Identifier z

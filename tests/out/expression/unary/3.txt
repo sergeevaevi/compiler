@@ -1,0 +1,6 @@
+ExpressionStatement
+    NotExpression !
+        Identifier x
+ExpressionStatement
+    BitNotExpression ~
+        Identifier x

@@ -1,0 +1,9 @@
+ExpressionStatement
+    AssignmentExpression =
+        Identifier a
+        ElementList
+            AdditiveExpression +
+                Identifier a
+                Literal 
+                    NumericLiteral 1
+            Identifier b

@@ -1,0 +1,6 @@
+ExpressionStatement
+    EqualityExpression <
+        Literal 
+            NumericLiteral 1
+        Literal 
+            NumericLiteral 2

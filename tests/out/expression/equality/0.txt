@@ -1,0 +1,8 @@
+ExpressionStatement
+    EqualityExpression ==
+        Identifier x
+        Identifier y
+ExpressionStatement
+    EqualityExpression !=
+        Identifier x
+        Identifier y

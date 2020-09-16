@@ -1,0 +1,6 @@
+ExpressionStatement
+    AssignmentExpression =
+        Identifier a
+        ElementList
+            Literal 
+                NumericLiteral 52

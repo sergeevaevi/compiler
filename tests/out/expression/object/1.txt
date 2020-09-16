@@ -1,0 +1,4 @@
+ExpressionStatement
+    AssignmentExpression =
+        Identifier x
+        ObjectLiteral

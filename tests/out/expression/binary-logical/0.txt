@@ -1,0 +1,18 @@
+ExpressionStatement
+    BitLogicalAndExpression: &&
+        BitLogicalAndExpression: &&
+            Identifier x
+            Identifier y
+        Identifier z
+ExpressionStatement
+    BitLogicalOrExpression: ||
+        Identifier x
+        BitLogicalAndExpression: &&
+            Identifier y
+            Identifier z
+ExpressionStatement
+    BitLogicalOrExpression: ||
+        Identifier x
+        BitXOrExpression ^
+            Identifier y
+            Identifier z
