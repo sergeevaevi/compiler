@@ -25,9 +25,9 @@ find_package(ANTLR REQUIRED)
 find_package(GTest REQUIRED)
 
 # Call macro to add lexer and grammar to your build dependencies.
-antlr_target(SampleGrammarLexer JavaScriptLexer.g4 LEXER
+antlr_target(SampleGrammarLexer grammar/JavaScriptLexer.g4 LEXER
              PACKAGE antlrcpptest)
-antlr_target(SampleGrammarParser JavaScriptParser.g4 PARSER
+antlr_target(SampleGrammarParser grammar/JavaScriptParser.g4 PARSER
              PACKAGE antlrcpptest
              DEPENDS_ANTLR SampleGrammarLexer
              COMPILE_FLAGS -lib ${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
@@ -37,7 +37,7 @@ include_directories(${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
 include_directories(${ANTLR_SampleGrammarParser_OUTPUT_DIR})
 include_directories(${GTEST_INCLUDE_DIRS})
 # add generated grammar to demo binary target
-add_executable(demo main.cpp
+add_executable(demo src/main.cpp
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptLexer/JavaScriptLexer.h
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptLexer/JavaScriptLexer.cpp
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptLexer/JavaScriptLexerBase.h
@@ -46,15 +46,16 @@ add_executable(demo main.cpp
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParserBase.h
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParser.cpp
         cmake-build-debug/antlr4cpp_generated_src/JavaScriptParser/JavaScriptParser.h
-        MyVisitor.cpp
-        MyVisitor.h
+        src/MyVisitor.cpp
+        src/MyVisitor.h
         gen/JavaScriptParser.h
         gen/JavaScriptParser.cpp
         gen/JavaScriptLexer.h
         gen/JavaScriptLexer.cpp
         gen/JavaScriptParserBaseVisitor.cpp
         gen/JavaScriptParserBaseVisitor.h
-     #   tests/tests.cpp
+        tests/tests.h
+        tests/tests.cpp
         ${ANTLR_SampleGrammarLexer_CXX_OUTPUTS}
                ${ANTLR_SampleGrammarParser_CXX_OUTPUTS}
         )
