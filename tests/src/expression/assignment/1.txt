@@ -1,0 +1,15 @@
+ExpressionStatement
+    AssignmentExpression =
+        Identifier x
+        Literal 
+            NumericLiteral 42
+ExpressionStatement
+    AssignmentExpression =
+        Identifier eval
+        Literal 
+            NumericLiteral 42
+ExpressionStatement
+    AssignmentExpression =
+        Identifier arguments
+        Literal 
+            NumericLiteral 42

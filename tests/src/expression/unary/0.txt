@@ -1,0 +1,6 @@
+ExpressionStatement
+    UnaryPlusExpression +
+        Identifier x
+ExpressionStatement
+    UnaryMinusExpression -
+        Identifier x

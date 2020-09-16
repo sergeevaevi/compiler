@@ -1,0 +1,30 @@
+ExpressionStatement
+    Identifier x
+    AssignmentExpression <<=
+    Literal 
+        NumericLiteral 42
+ExpressionStatement
+    Identifier x
+    AssignmentExpression >>=
+    Literal 
+        NumericLiteral 42
+ExpressionStatement
+    Identifier x
+    AssignmentExpression >>>=
+    Literal 
+        NumericLiteral 42
+ExpressionStatement
+    Identifier x
+    AssignmentExpression |=
+    Literal 
+        NumericLiteral 42
+ExpressionStatement
+    Identifier x
+    AssignmentExpression ^=
+    Literal 
+        NumericLiteral 42
+ExpressionStatement
+    Identifier x
+    AssignmentExpression &=
+    Literal 
+        NumericLiteral 42
